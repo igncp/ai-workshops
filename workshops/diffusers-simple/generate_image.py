@@ -3,7 +3,7 @@ import sys
 from diffusers import AutoPipelineForText2Image
 
 # Check for GPU availability and set the device
-device = "cuda" if torch.cuda.is_available() else "cpu"
+device = "cuda" if torch.cuda.is_available() else "mps"
 print(f"Using device: {device}")
 
 # Initialize the pipeline and move it to the device

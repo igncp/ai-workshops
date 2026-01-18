@@ -4,7 +4,7 @@ from diffusers import DiffusionPipeline
 
 default_model = "stabilityai/stable-diffusion-xl-base-1.0"
 model_id = sys.argv[2] if len(sys.argv) > 2 else default_model
-device = "cuda" if torch.cuda.is_available() else "cpu"
+device = "cuda" if torch.cuda.is_available() else "mps"
 
 # 2. Load the pipeline
 # Use torch.float16 for efficiency, especially on GPUs
