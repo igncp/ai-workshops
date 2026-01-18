@@ -1,0 +1,16 @@
+{
+  "name": "embeddings-simple",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "@xenova/transformers": "^2.17.2",
+    "fast-cosine-similarity": "^1.2.2"
+  }
+}

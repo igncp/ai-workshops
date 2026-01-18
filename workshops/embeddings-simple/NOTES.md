@@ -1,0 +1,7 @@
+- The most important feature of embeddings is their geometric relationship: distance equals meaning
+- In Node.js, embeddings are `Float32Array`
+- Pooling in embeddings is the process of condensing a sequence of token-level embeddings (like words in a sentence) into a single, fixed-length vector that represents the whole sequence's meaning
+    - There are different ways, like `average`, `max`, etc.
+- Cosine similarity is typically preferred for text embeddings, where a higher score indicates greater similarity (a value of 1 means identical, 0 means orthogonal, -1 means opposite)
+- `@xenova/transformers` for the cosine similarity didn't work in Mac M2, probably due to the GPU (c++ error due to hardware)
+- `dtype` means Data Type and `fp32` means single-precision floating point, which uses 32 bits of memory to store each number.
