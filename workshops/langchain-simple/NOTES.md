@@ -1,0 +1,8 @@
+- Langchain has two core purposes:
+    - Standardizing APIs
+    - Context Management: Raw LLMs are "stateless" (they forget previous messages). LangChain provides the "plumbing" to give them memory, access to private documents, and the ability to perform real-world tasks.
+- The building blocks of langchain:
+    - Chains: Sequences of automated actions, such as taking a user's query, searching a database, and then generating an answer.
+    - Retrieval (RAG): It enables Retrieval-Augmented Generation, allowing LLMs to access proprietary or up-to-date data (e.g., PDFs, databases) without retraining the model.
+    - Agents & Tools: Agents use an LLM as a "reasoning engine" to decide which tools (like a calculator, web search, or custom API) to use to solve a problem.
+    - Memory: Sophisticated modules that store and summarize conversation history so the AI can maintain context over long interactions. 

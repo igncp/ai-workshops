@@ -1,3 +1,7 @@
 .venv
+.direnv
 node_modules
+
 *.png
+*.pt
+*.wav

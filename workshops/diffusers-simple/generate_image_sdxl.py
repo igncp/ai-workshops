@@ -11,9 +11,9 @@ device = "cuda" if torch.cuda.is_available() else "mps"
 # "cuda" moves the model to the GPU
 pipe = DiffusionPipeline.from_pretrained(
     model_id,
-    torch_dtype=torch.float16 if device == "cuda" else torch.float32, 
+    torch_dtype=torch.float16 if device == "cuda" else torch.float32,
     variant="fp16",
-    use_safetensors=True
+    use_safetensors=True,
 )
 pipe.to(device)
 
@@ -28,10 +28,10 @@ prompt = sys.argv[1] if len(sys.argv) > 1 else default_prompt
 # Adjust parameters like num_inference_steps, guidance_scale, height, and width as needed
 image = pipe(
     prompt=prompt,
-    num_inference_steps=25, # A good balance, more steps increase quality but also time
-    guidance_scale=7.5, # Controls how strongly the prompt influences the image
+    num_inference_steps=25,  # A good balance, more steps increase quality but also time
+    guidance_scale=7.5,  # Controls how strongly the prompt influences the image
     width=1024,
-    height=1024 # Recommended dimensions for SDXL
+    height=1024,  # Recommended dimensions for SDXL
 ).images[0]
 
 # 5. Save the image

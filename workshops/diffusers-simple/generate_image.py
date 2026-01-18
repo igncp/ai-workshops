@@ -13,9 +13,9 @@ model = sys.argv[2] if len(sys.argv) > 2 else default_model
 
 pipeline = AutoPipelineForText2Image.from_pretrained(
     model,
-    torch_dtype=torch.float16 if device == "cuda" else torch.float32, 
-    variant="fp16", 
-    use_safetensors=True
+    torch_dtype=torch.float16 if device == "cuda" else torch.float32,
+    variant="fp16",
+    use_safetensors=True,
 ).to(device)
 
 # Optional: Enable memory efficient attention if you have xformers installed

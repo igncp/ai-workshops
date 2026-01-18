@@ -40,14 +40,14 @@ try:
             torch_dtype=torch_dtype,
             use_safetensors=True,
         )
-    
+
     # Move the pipeline to the GPU (cuda)
     pipe.to(device)
 
     # Run the text-to-image generation pipeline
     print(f"Generating image with prompt: '{prompt}'...")
     image = pipe(prompt=prompt).images[0]
-    
+
     # Save the generated image
     image.save(output_filename)
     print(f"Image successfully saved as '{output_filename}'")
@@ -58,4 +58,3 @@ except FileNotFoundError:
 except Exception as e:
     print(f"An error occurred: {e}")
     traceback.print_exc()
-
