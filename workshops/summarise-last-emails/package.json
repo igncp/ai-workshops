@@ -1,0 +1,19 @@
+{
+    "name": "summarise-last-emails",
+    "version": "0.1.0",
+    "private": true,
+    "type": "commonjs",
+    "description": "Fetch last 10 Gmail emails and summarize them.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "@google-cloud/local-auth": "^2.1.0",
+        "googleapis": "^131.0.0",
+        "html-to-text": "^9.0.5",
+        "ollama": "^0.5.4",
+        "open": "^9.1.0",
+        "server-destroy": "^1.0.1"
+    }
+}

@@ -1,3 +1,9 @@
+## Ollama
+
+- Default location in macOS: `~/.ollama/models`
+- `ollama serve`: Runs the server which is necessary for multiple commands
+- `ollama run llama3.1`: Pulls the model if not present
+
 ## Hugging Face
 
 - To know which hugging face models are installed: `huggingface-cli scan-cache`
@@ -11,3 +17,13 @@
     - tokenization: `special_tokens_map.json`: Maps special tokens (like <|endoftext|>, <s>, </s>) to their corresponding IDs. 
     - Post about the different weight formats: https://huggingface.co/blog/ngxson/common-ai-model-formats
 - Stable Diffusion XL (SDXL)
+
+## UV
+
+- `uv venv`: Create a new virtual environment
+- `uv pip install -r requirements.tx`: Use `uv` in a pip project
+
+## Future
+
+- `llama-cpp`
+- vLLM

@@ -20,7 +20,10 @@
           nodejs
           python313Packages.huggingface-hub
           ruff
+          uv
           shfmt
+          ollama
+          llama-cpp
         ];
       };
     });
