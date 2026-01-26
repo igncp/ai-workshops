@@ -1,4 +1,3 @@
-
 ## Resources
 
 - Awesome AI tools: https://github.com/mahseema/awesome-ai-tools

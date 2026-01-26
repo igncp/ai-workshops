@@ -24,6 +24,8 @@
           shfmt
           ollama
           llama-cpp
+          ffmpeg
+          cmake
         ];
       };
     });
