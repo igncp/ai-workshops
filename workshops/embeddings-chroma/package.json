@@ -1,0 +1,15 @@
+{
+  "name": "chroma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@chroma-core/ollama": "^0.1.8",
+    "chromadb": "^3.2.2"
+  }
+}
