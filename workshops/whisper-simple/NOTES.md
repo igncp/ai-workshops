@@ -2,8 +2,8 @@
 - CPP implementation (supposed to be faster): https://github.com/ggml-org/whisper.cpp
 - `whisper song.mp3 --model medium --language Japanese --task translate`
 - whispercpp
-    - `./build/bin/whisper-cli -m $PWD/models/ggml-medium.bin -f ../song_short.mp3 -l Japanese  -otxt`
+  - `./build/bin/whisper-cli -m $PWD/models/ggml-medium.bin -f ../song_short.mp3 -l Japanese  -otxt`
 - Trim the song:
 - `ffmpeg -ss 00:00:00 -t 00:01:00 -i input.mp3 -acodec copy output.mp3`
 - Regarding the error when running in Mac Mini
-    - FP16 (half-precision) is generally not supported or efficient on CPUs because most lack native hardware support (ALU) for 16-bit floating-point arithmetic, forcing slow emulation. While modern CPUs may have ISA extensions (like AVX512-FP16 or AMX), standard CPU libraries often lack optimized kernels for FP16, resulting in slower performance than FP32. 
+  - FP16 (half-precision) is generally not supported or efficient on CPUs because most lack native hardware support (ALU) for 16-bit floating-point arithmetic, forcing slow emulation. While modern CPUs may have ISA extensions (like AVX512-FP16 or AMX), standard CPU libraries often lack optimized kernels for FP16, resulting in slower performance than FP32.
